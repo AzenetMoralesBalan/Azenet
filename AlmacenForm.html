@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manejo de Almacén</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+</style>
+</head>
+<body>
+
+<h2>Lista de Productos en Almacén</h2>
+
+<table class="w3-table w3-bordered">
+  <thead>
+    <tr>
+      <th>Código de Producto</th>
+      <th>Descripción</th>
+      <th>Cantidad Disponible</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>001</td>
+      <td>Lámpara LED</td>
+      <td>50 unidades</td>
+    </tr>
+    <tr>
+      <td>002</td>
+      <td>Teclado Inalámbrico</td>
+      <td>30 unidades</td>
+    </tr>
+    <tr>
+      <td>003</td>
+      <td>Ratón Óptico</td>
+      <td>40 unidades</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- Formulario para Registrar Producto -->
+<div class="w3-container">
+  <form class="w3-container w3-card-4">
+    <h2>Registrar Nuevo Producto</h2>
+    <label class="w3-text-blue"><b>Código del Producto:</b></label>
+    <input class="w3-input" type="text" placeholder="Código del producto" required><br>
+    <!-- Otros campos para descripción, cantidad, proveedor, fecha de recepción -->
+    <button class="w3-btn w3-blue">Registrar Producto</button>
+  </form>
+</div>
+
+<!-- Formulario para Registrar Venta -->
+<div class="w3-container">
+  <form class="w3-container w3-card-4">
+    <h2>Registrar Venta</h2>
+    <label class="w3-text-blue"><b>Código del Producto:</b></label>
+    <input class="w3-input" type="text" placeholder="Código del producto" required><br>
+    <!-- Otros campos para cantidad vendida, cliente, fecha de venta -->
+    <button class="w3-btn w3-blue">Registrar Venta</button>
+  </form>
+</div>
+
+<!-- Formulario para Actualizar Producto -->
+<div class="w3-container">
+  <form class="w3-container w3-card-4">
+    <h2>Actualizar Información de Producto</h2>
+    <label class="w3-text-blue"><b>Buscar por Código o Descripción:</b></label>
+    <input class="w3-input" type="text" placeholder="Buscar" required><br>
+    <!-- Campos para actualizar información como cantidad en inventario o proveedor -->
+    <button class="w3-btn w3-blue">Buscar</button>
+  </form>
+</div>
+
+</body>
+</html>
